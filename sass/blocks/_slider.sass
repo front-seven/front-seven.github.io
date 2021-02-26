@@ -1,0 +1,92 @@
+.slider
+    position: relative
+    margin: 0 auto
+    margin-top: 30px
+    width: 1308px
+    min-height: 632px
+    background: #F0F3F5
+    padding: 86px 92px 0 172px
+    border-radius: 10px
+    &__slides
+        &::before
+            content: '“'
+            position: absolute
+            top: 200px
+            left: 105px
+            font-family: 'ProximaNova', serif
+            font-weight: 700
+            font-style: italic
+            font-size: 80px
+            line-height: 36px
+            color: #97A3B4
+    &__slide
+        opacity: 0.52
+        transition: .3s all
+    &__descr
+        position: relative
+        margin-top: 47px
+        width: 433px
+        font-family: 'Merriweather', serif
+        font-style: italic
+        font-weight: 300
+        font-size: 20px
+        line-height: 30px
+        color: #384656
+        cursor: pointer
+        span
+            font-family: 'Roboto', sans-serif
+            font-size: 16px
+            line-height: 42px
+            font-style: normal
+            font-weight: 400
+    &__wrapper
+        position: absolute
+        bottom: 74px
+        right: 174px
+        width: 320px
+        display: flex
+        justify-content: space-between
+    &__text
+        font-size: 18px
+        line-height: 26px
+        letter-spacing: 0.54px
+        color: #384656
+.slick-track
+    display: flex
+    align-items: flex-start
+    overflow: hidden
+.slick-current
+    opacity: 1
+    .slider__descr
+        cursor: auto
+        width: 555px
+        font-size: 28px
+        line-height: 40px
+.slick-list
+    margin: 0 -93px
+    overflow: hidden
+.slick-slide
+    outline: none
+    margin: 0 93px
+.slick-dots
+    position: absolute
+    bottom: 80px
+    left: 174px
+    display: flex
+    align-items: center
+    justify-content: start
+    li
+        list-style: none
+        button
+            margin: 58px 2px 0 2px
+            font-size: 0
+            border: none
+            width: 26px
+            height: 2px
+            background: #DDE2E6
+            cursor: pointer
+            &:focus
+                outline: none
+    .slick-active
+        button
+            background: #5978FF

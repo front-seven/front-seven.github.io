@@ -1,0 +1,63 @@
+.services
+    min-height: 900px
+    padding-top: 146px
+    padding-bottom: 200px
+    &__wrapper
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    &__text
+        width: 341px
+        font-family: Merriweather
+        font-style: italic
+        font-weight: 300
+        font-size: 20px
+        line-height: 32px
+        color: #97A3B4
+    &__circles
+        position: relative
+        margin: 0 auto
+        margin-top: 84px
+    &__circle
+        width: 272px
+        height: 272px
+        border-radius: 100%
+        font-size: 36px
+        line-height: 40px
+        font-weight: 300
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        cursor: pointer
+        transition: 0.4s all
+        &-ux
+            position: absolute
+            top: 0
+            left: 0
+            background: linear-gradient(319.97deg, #B47CE0 12.74%, #5F47ED 88.4%)
+            &:hover
+                top: -15px
+        &-ui
+            position: absolute
+            background: linear-gradient(327.62deg, #C387DA 5.21%, #9868ED 91.01%)
+            top: 27px
+            left: 231px
+            &:hover
+                top: 12px
+        &-front
+            position: absolute
+            top: 60px
+            left: 462px
+            background: linear-gradient(318.54deg, #FAB0BD 10.89%, #BC81DC 87.68%)
+            &:hover
+                top: 45px
+        &-back
+            position: absolute
+            top: 90px
+            left: 692px
+            background: linear-gradient(328.55deg, #FEBB95 12.12%, #F5A5E3 85.7%)
+            &:hover
+                top: 75px
+        &:hover
+            background: #384656

@@ -1,0 +1,77 @@
+.references
+    margin: 0 auto
+    margin-top: 30px
+    width: 1308px
+    height: 632px
+    background: #F0F3F5
+    padding: 86px 92px 0 172px
+    border-radius: 10px
+    &__slide
+        &_hidden
+            display: none
+    &__descr
+        position: relative
+        margin-top: 47px
+        width: 555px
+        font-family: 'Merriweather', serif
+        font-style: italic
+        font-weight: 300
+        font-size: 28px
+        line-height: 40px
+        color: #384656
+        &::before
+            content: '“'
+            position: absolute
+            top: 25px
+            left: -63px
+            font-family: 'ProximaNova', serif
+            font-weight: 700
+            font-style: italic
+            font-size: 80px
+            line-height: 36px
+            color: #97A3B4
+        &-right
+            font-size: 20px
+            line-height: 30px
+            width: 403px
+            opacity: 0.52
+            margin-top: 62px
+            cursor: pointer
+            &::before
+                content: none
+        span
+            font-family: 'Roboto', sans-serif
+            font-size: 16px
+            line-height: 42px
+            font-style: normal
+            font-weight: 400
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__dots
+        margin-top: 58px
+        width: 86px
+        display: flex
+        justify-content: space-between
+    &__dot
+        width: 26px
+        height: 2px
+        background: #DDE2E6
+        cursor: pointer
+        &_active
+            background: #5978FF
+    &__start
+        position: relative
+        margin-top: 13px
+        width: 323px
+        display: flex
+        justify-content: space-between
+    &__text
+        font-size: 18px
+        line-height: 26px
+        letter-spacing: 0.54px
+        color: #384656
+
+.slick-track
+    display: flex
+    align-items: flex-start

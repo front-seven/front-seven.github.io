@@ -1,0 +1,361 @@
+@media (max-width: 1306px)
+    .header
+        &__social
+            margin-left: 170px
+    .promo
+        width: 100%
+        &__bg-1
+            width: 100%
+        &__bg-2
+            width: 100%
+        &__bg-3
+            width: 100%
+        &__bg-4
+            width: 100%
+    .solutions
+        &__bg
+            width: 100%
+        &__next
+            left: 50px
+        &__prev
+            left: 50px
+    .slider
+        width: 100%
+        padding-left: 122px
+        &__slides
+            &::before
+                left: 70px
+@media (max-width: 1200px)
+    .container
+        max-width: 720px
+    .header
+        &__content
+            width: 100%
+        &__logo
+            margin-left: 30px
+        &__menu
+            margin-left: 36px
+        &__social
+            display: none
+    .services
+        &__circles
+            position: static
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        &__circle
+            &-ux
+                position: static
+            &-ui
+                position: static
+            &-front
+                position: static
+                margin-top: 30px
+            &-back
+                position: static
+                margin-top: 30px
+    .features
+        &__deck
+            display: none
+    .solutions
+        &__next
+            left: 50px
+        &__prev
+            left: 50px
+    .slider
+        &__wrapper
+            right: 100px
+        .divider_slider
+            right: 100px
+    .news
+        &__wrapper
+            display: block
+        &__main
+            width: 100%
+            height: 250px
+            display: flex
+            justify-content: space-between
+            &-content
+                padding: 20px 20px 0 20px
+        &__img
+            width: 250px
+            object-fit: cover
+        &__subtitle
+            margin-left: 0
+        &__descr
+            margin-left: 0
+        &__date
+            margin-left: 0
+        &__list
+            margin-top: 50px
+@media (max-width: 992px)
+    .container
+        max-width: 640px
+    .header
+        position: relative
+        display: flex
+        justify-content: space-between
+        width: auto
+        left: 0
+        transform: none
+        padding: 30px
+        &__logo
+            margin: 0
+        &__menu
+            position: fixed
+            align-items: start
+            margin: 0
+            top: 0
+            right: -100%
+            width: 240px
+            height: 100vh
+            padding: 30px 15px
+            background: #FFFFFF
+            box-shadow: 0px 5px 30px rgba(14, 24, 44, 0.2)
+            transition: 0.6s all
+            &_active
+                right: 0
+            .divider_header
+                display: block
+                position: absolute
+                width: 100%
+                bottom: 218px
+                left: 0
+        &__list
+            flex-direction: column
+            justify-content: start
+            align-items: start
+            margin-top: 60px
+            margin-left: 0
+            &-item
+                margin: 7px 15px
+        &__social
+            position: absolute
+            bottom: 151px
+            margin: 0
+            display: flex
+            justify-content: space-between
+            width: 204px
+        .btn
+            display: block
+            position: absolute
+            bottom: 30px
+            width: 186px
+            &_partner
+                bottom: 86px
+        &__hamburger
+            display: block
+            position: absolute
+            top: 30px
+            right: 30px
+            width: 36px
+            height: 36px
+            border-radius: 100%
+            background: rgba(89, 120, 255, .1)
+            mix-blend-mode: normal
+            padding-top: 11px
+            span
+                display: block
+                margin: 2px auto
+                width: 12px
+                height: 2px
+                background: $main-color
+                transition: .3s all
+            &_active
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: translateY(5px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+    .promo
+        margin: 0 auto
+        .title__promo
+            left: 80px
+        &__descr
+            left: 80px
+        .btn_promo
+            left: 80px
+            margin: 0
+    .services
+        padding: 90px 0
+        &__wrapper
+            display: block
+            width: 100%
+        &__text
+            width: 508px
+            font-size: 20px
+            margin-top: 27px
+    .features
+        padding-top: 80px
+    .solutions
+        &__subtitle
+            margin-top: 150px
+        &__menu
+            width: 100%
+        &__item
+            &::after
+                width: 100%
+        &__next
+            display: none
+        &__prev
+            display: none
+    .slider
+        padding-left: 70px
+        min-height: 700px
+        &__slides
+            &::before
+                top: 192px
+        &__descr
+            margin-top: 100px
+        &__wrapper
+            width: 153px
+            bottom: 72px
+        &__text
+            display: none
+        .divider_slider
+            display: none
+        .slick-dots
+            bottom: 72px
+            left: 70px
+    .news
+        &__list
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        &__item
+            &-wrapper
+                width: 290px
+            &-descr
+                width: 151px
+            &-title
+                width: 100%
+        .divider_news
+            width: 290px
+            &-last
+                display: block
+    .events
+        padding-top: 80px
+        &__wrapper
+            display: block
+        &__card
+            width: 100%
+            margin: 20px 0
+    .partners
+        padding-top: 100px
+        &__wrapper
+            width: 100%
+    .footer
+        &__menu
+            flex-wrap: wrap
+        &__item
+            width: 50%
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .services
+        &__circles
+            justify-content: center
+            align-items: center
+        &__circle
+            margin: 10px 0
+    .features
+        &__items
+            column-gap: 50px
+    .slider
+        padding-left: 10px
+        &__wrapper
+            right: 10px
+        .slick-dots
+            left: 10px
+    .news
+        .title
+            width: auto
+        &__img
+            width: 226px
+@media (max-width: 576px)
+    .title
+        width: auto
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .header
+        &__menu
+            height: 100%
+    .promo
+        height: 620px
+        .title__promo
+            font-weight: 300
+            font-size: 48px
+            line-height: 48px
+            left: 20px
+        &__descr
+            left: 20px
+            font-size: 18px
+            line-height: 24px
+        .btn_promo
+            left: 20px
+    .services
+        &__text
+            width: auto
+    .features
+        &__items
+            width: auto
+            grid-template-columns: 1fr
+        .divider
+            width: 100%
+    .solutions
+        &__bg
+            width: 100%
+            object-fit: cover
+        &__descr
+            width: 100%
+        &__menu
+            display: none
+        .divider_solutions
+            margin-top: 14px
+            display: block
+            width: 100%
+    .slider
+        width: auto
+        padding: 60px 10px 0 10px
+        .slick-current
+            width: 350px
+            .slider__descr
+                width: auto
+                font-size: 18px
+                line-height: 28px
+        .slick-track
+            width: 100%
+            overflow: hidden
+        .slick-list
+            overflow: hidden
+            .slick-slide
+                margin: 0
+        .slick-dots
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 162px
+        &__slides
+            &::before
+                left: 10px
+                top: 160px
+        &__wrapper
+            right: 0
+            width: 100%
+            .btn_slider
+                width: 100%
+                padding-top: 10px
+                font-size: 18px
+                line-height: 36px
+    .news
+        .btn_news
+            display: none
+        &__main
+            display: none
+        &__item
+            &-wrapper
+                width: 100%
+            &-descr
